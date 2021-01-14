@@ -13,6 +13,9 @@
 
 #include <linux/types.h>
 
+#define V4L2_CTRL_CLASS_CODEC           0x00990000      /* Stateful codec controls */
+#define V4L2_CID_CODEC_BASE                     (V4L2_CTRL_CLASS_CODEC | 0x900)
+
 #define V4L2_PIX_FMT_VP8_FRAME v4l2_fourcc('V', 'P', '8', 'F')
 
 #define V4L2_CID_MPEG_VIDEO_VP8_FRAME_HEADER (V4L2_CID_CODEC_BASE + 2000)

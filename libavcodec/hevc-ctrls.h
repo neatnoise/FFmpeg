@@ -13,6 +13,9 @@
 
 #include <linux/videodev2.h>
 
+#define V4L2_CTRL_CLASS_CODEC           0x00990000      /* Stateful codec controls */
+#define V4L2_CID_CODEC_BASE                     (V4L2_CTRL_CLASS_CODEC | 0x900)
+
 /* The pixel format isn't stable at the moment and will likely be renamed. */
 #define V4L2_PIX_FMT_HEVC_SLICE v4l2_fourcc('S', '2', '6', '5') /* HEVC parsed slices */
 
